@@ -7,12 +7,14 @@ import { useState, useEffect } from "react";
 import NavBar from "../components/navbar";
 import DashboardCoverPage from "../components/dashboardCoverpage";
 import DashboardConCept from "../components/dashboardconcept";
+import DashboardStandard from "../components/dashboardStandard";
 export default function Home() {
   return (
     <>
       <NavBar />
-      <DashboardCoverPage/>
-      <DashboardConCept/>
+      <DashboardCoverPage />
+      <DashboardConCept />
+      <DashboardStandard/>
       <div className={styles.container}>
         <Head>
           <title>Create Next App</title>

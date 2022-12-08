@@ -13,14 +13,9 @@ export default function DashboardCoverPage() {
           src={imgpath}
           alt="Picture of the author"
         />
-        <Typography
-          variant="h6"
-          component="div"
-          sx={{ flexGrow: 1 }}
-          className={styles.companyname}
-        >
-          SMD SECURITY CO. LTD.
-        </Typography>
+        <Box className={styles.boxcompanyname}>
+          <p className={styles.companyname}>SMD SECURITY CO. LTD.</p>
+        </Box>
       </Box>
     </>
   );

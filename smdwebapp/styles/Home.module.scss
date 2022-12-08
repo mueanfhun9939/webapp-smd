@@ -33,7 +33,7 @@
       display: none;
     }
 
-    @media only screen and (max-width: 780px) {
+    @media only screen and (max-width: 860px) {
       .textcontectTitle {
         font-size: 0.5em;
       }
@@ -92,54 +92,54 @@
   height: 500px;
   filter: grayscale(30%) blur(0.5px);
 
-  @media only screen and (max-width: 426px) {
+  @media only screen and (max-width: 480px) {
     height: 220px;
   }
 
-  @media only screen and (min-width: 460px) and (max-width: 900px) {
+  @media only screen and (min-width: 481px) and (max-width: 900px) {
     height: 300px;
   }
 }
 
-.companyname {
+.boxcompanyname {
   color: #fafafa;
   font-family: "Rancho";
-  top: 270px;
-  left: 15%;
-  font-size: 120px;
+  width: 100%;
   position: absolute;
   font-weight: 800;
+  text-align: center;
+  top: 180px;
 
-  @media only screen and (max-width: 360px) {
-    top: 180px;
-    left: 10%;
-    font-size: 30px;
+  .companyname {
+    margin: 0;
   }
 
-  @media only screen and (min-width: 370px) and (max-width: 426px) {
-    top: 180px;
-    left: 15%;
+  @media only screen and (max-width: 480px) {
+    top: 200px;
     font-size: 35px;
   }
 
-  @media only screen and (min-width: 460px) and (max-width: 860px) {
+  @media only screen and (min-width: 430px) and (max-width: 860px) {
     top: 200px;
-    left: 15%;
     font-size: 65px;
   }
 
   @media only screen and (min-width: 900px) and (max-width: 1060px) {
     top: 300px;
-    left: 15%;
     font-size: 85px;
+  }
+
+  @media only screen and (min-width: 1061px) and (max-width: 1440px) {
+    top: 300px;
+    font-size: 100px;
   }
 }
 
 .coverConcept {
   width: 100%;
-  height: 300px;
+  height: 500px;
 
-  @media only screen and (max-width: 300px) {
+  @media only screen and (max-width: 790px) {
     height: 350px;
   }
 }
@@ -149,10 +149,10 @@
   width: 80%;
   background-color: #fff;
   position: absolute;
+  font-family: $text-font-thai;
   top: 338px;
   left: 10%;
-  height: 265px;
-  font-family: $text-font-thai;
+  height: calc(350px * 85 / 100);
 
   .logoCompany {
     width: 100px;
@@ -160,13 +160,16 @@
   }
 
   .textconceptTitle {
-    font-size: 5px;
-    font-weight: bold;
+    font-family: $text-font-thai;
+    font-size: 14px;
+    font-weight: 700;
     text-align: center;
   }
 
   .textconceptSubTitle {
-    font-size: 5px;
+    font-family: $text-font-thai;
+    font-weight: 400;
+    font-size: 11px;
     padding: 0 15px;
   }
 
@@ -175,9 +178,38 @@
     height: 300px;
     top: 338px;
     left: 10%;
+
+    .textconceptTitle {
+      font-size: 11px;
+    }
+
+    .textconceptSubTitle {
+      font-size: 10px;
+    }
   }
 
-  @media only screen and (min-width: 500px) {
+  @media only screen and (max-width: 320px) {
+    .textconceptSubTitle {
+      font-size: 10px;
+    }
+  }
+
+  @media only screen and (min-width: 500px) and (max-width: 680px) {
+    top: 420px;
+    .logoCompany {
+      height: 100px;
+    }
+
+    .textconceptTitle {
+      font-size: 17px;
+    }
+
+    .textconceptSubTitle {
+      font-size: 12px;
+    }
+  }
+
+  @media only screen and (min-width: 681px) {
     display: none;
   }
 }
@@ -190,30 +222,141 @@
   position: absolute;
   top: 430px;
   left: 10%;
+  height: calc(350px * 85 / 100);
+
   .logoCompany {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
   }
 
   .textconceptTitle {
+    font-family: $text-font-thai;
     font-size: 16px;
-    font-weight: bold;
+    margin-top: 15px;
+    font-weight: 700;
     text-align: center;
   }
 
   .textconceptSubTitle {
+    font-family: $text-font-thai;
     font-size: 13px;
-    padding: 0 15px;
+    padding: 5px 15px;
+    font-weight: 400;
   }
 
-  @media only screen and (max-width: 560px) {
+  @media only screen and (max-width: 681px) {
     display: none;
   }
 
-  @media only screen and (min-width: 780px){
-    top: 630px;
-    left: 20%;
-    width: 60%;
+  @media only screen and (min-width: 780px) {
+    left: 10%;
+    width: 80%;
+
+    .textconceptTitle {
+      font-size: 14px;
+    }
+
+    .textconceptSubTitle {
+      margin-top: 10px;
+      font-size: 10px;
+    }
+  }
+
+  @media only screen and (min-width: 781px) {
+    left: 15%;
+    width: 70%;
+    top: 500px;
+    .textconceptSubTitle {
+      font-size: 14px;
+      padding: 0 40px;
+    }
+  }
+
+  @media only screen and (min-width: 900px) {
+    left: 15%;
+    width: 70%;
+    top: 700px;
+    .textconceptSubTitle {
+      font-size: 14px;
+      padding: 0 40px;
+    }
+  }
+}
+
+.coverstandard {
+  background-color: #f1f1f3;
+  height: 465px;
+  .img {
+    width: 100%;
+    height: 500px;
+    padding: 0 50px;
+  }
+
+  .boxstandardsm {
+    .title {
+      text-align: center;
+      padding-top: 65px;
+      font-family: $text-font-thai;
+      font-size: 35px;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      font-family: $text-font-thai;
+      font-size: 16px;
+      font-weight: 400;
+      padding: 0 20px;
+    }
+
+    .imgLine {
+      position: absolute;
+      width: 100%;
+      height: 465px;
+      color: transparent;
+      top: 665px;
+    }
+  }
+
+  @media only screen and (min-width: 426px) and (max-width: 759px) {
+    // max กว้างมากกว่า ?
+    height: 360px;
+    .img {
+      display: none;
+    }
+    .boxstandardsm {
+      .imgLine {
+        height: 420px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 481px) and (max-width: 759px) {
+    // max กว้างมากกว่า ?
+    .img {
+      display: none;
+    }
+    .boxstandardsm {
+      .imgLine {
+        height: 360px;
+        top: 745px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 759px) {
+    // max น้อยกว่าหรือเท่ากับ ?
+    .img {
+      display: none;
+    }
+  }
+
+  @media only screen and (min-width: 760px) {
+    // min มากกว่าหรือเท่ากับ
+
+    height: 500px;
+    .boxstandardsm {
+      display: none;
+    }
   }
 }
 
