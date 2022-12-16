@@ -1,7 +1,6 @@
 import React from "react";
 import NavBar from "../components/navbar";
 import Footer from "../components/footer";
-import Grid from "@mui/material/Grid";
 import styles from "../styles/Home.module.scss";
 import Image from "next/image";
 import Box from "@mui/material/Box";
@@ -13,16 +12,44 @@ export default function Gallery() {
     <>
       <NavBar />
       <Box>
-        <Typography className={styles.titleGallery}>การฝึกอบรมพนักงาน</Typography>
+        <Typography className={styles.titleGallery}>
+          การฝึกอบรมพนักงาน
+        </Typography>
         <Divider />
+      </Box>
+      <Box className={styles.boximgsx}>
+        {itemData.map((item) => (
+          <>
+            <Box
+              sx={{ textAlign: "center" }}
+              key={item.img1}
+              className={styles.boxlist}
+            >
+              <Box className={styles.img}>
+                <Image src={item.img1} alt="image1" width={150} height={150} />
+              </Box>
+              <Box className={styles.img}>
+                <Image src={item.img2} alt="image1" width={150} height={150} />
+              </Box>
+            </Box>
+          </>
+        ))}
       </Box>
       <Box className={styles.boximg}>
         {itemData.map((item) => (
           <>
-          <Box sx={{ textAlign: "center"}} key={item.img1}>
-            <img src={item.img1} alt="image1" className={styles.img} />
-            <img src={item.img2} alt="image1" className={styles.img} />
-          </Box>
+            <Box
+              sx={{ textAlign: "center" }}
+              key={item.img1}
+              className={styles.boxlist}
+            >
+              <Box className={styles.img}>
+                <Image src={item.img1} alt="image1" width={300} height={300} />
+              </Box>
+              <Box className={styles.img}>
+                <Image src={item.img2} alt="image1" width={300} height={300} />
+              </Box>
+            </Box>
           </>
         ))}
       </Box>
@@ -33,51 +60,51 @@ export default function Gallery() {
 
 const itemData = [
   {
-    img1: "static/DCS_0066.JPG",
-    img2: "static/DCS_0066.JPG",
+    img1: pathimg,
+    img2: pathimg,
   },
   {
-    img1: "static/DCS_0066.JPG",
-    img2: "static/DCS_0066.JPG",
+    img1: pathimg,
+    img2: pathimg,
   },
   {
-    img1: "static/DCS_0066.JPG",
-    img2: "static/DCS_0066.JPG",
+    img1: pathimg,
+    img2: pathimg,
   },
   {
-    img1: "static/DCS_0066.JPG",
-    img2: "static/DCS_0066.JPG",
+    img1: pathimg,
+    img2: pathimg,
   },
   {
-    img1: "static/DCS_0066.JPG",
-    img2: "static/DCS_0066.JPG",
+    img1: pathimg,
+    img2: pathimg,
   },
   {
-    img1: "static/DCS_0066.JPG",
-    img2: "static/DCS_0066.JPG",
+    img1: pathimg,
+    img2: pathimg,
   },
   {
-    img1: "static/DCS_0066.JPG",
-    img2: "static/DCS_0066.JPG",
+    img1: pathimg,
+    img2: pathimg,
   },
   {
-    img1: "static/DCS_0066.JPG",
-    img2: "static/DCS_0066.JPG",
+    img1: pathimg,
+    img2: pathimg,
   },
   {
-    img1: "static/DCS_0066.JPG",
-    img2: "static/DCS_0066.JPG",
+    img1: pathimg,
+    img2: pathimg,
   },
   {
-    img1: "static/DCS_0066.JPG",
-    img2: "static/DCS_0066.JPG",
+    img1: pathimg,
+    img2: pathimg,
   },
   {
-    img1: "static/DCS_0066.JPG",
-    img2: "static/DCS_0066.JPG",
+    img1: pathimg,
+    img2: pathimg,
   },
   {
-    img1: "static/DCS_0066.JPG",
-    img2: "static/DCS_0066.JPG",
+    img1: pathimg,
+    img2: pathimg,
   },
 ];
