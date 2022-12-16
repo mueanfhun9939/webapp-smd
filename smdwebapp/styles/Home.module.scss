@@ -377,6 +377,10 @@
     width: 80%;
     margin-left: 10%;
   }
+  .boxImgsx{
+    width: 80%;
+    margin-left: 10%;
+  }
   .title {
     color: white;
     font-family: $text-font-thai;
@@ -965,6 +969,9 @@
     .title {
       font-size: 25px;
     }
+    .boxImg {
+      display: none;
+    }
 
     .subTitle {
       font-size: 1em;
@@ -1034,6 +1041,9 @@
     .title {
       font-size: 25px;
     }
+    .boxImg {
+      display: none;
+    }
 
     .subTitle {
       font-size: 1em;
@@ -1080,6 +1090,9 @@
     .boxImg {
       width: 50%;
       margin-left: 25%;
+    }
+    .boxImgsx{
+      display: none;
     }
     .subTitle {
       font-size: 15px;
@@ -1139,9 +1152,8 @@
 
   .boxGallery {
     padding: 0 10%;
-    .boxImg {
-      width: 50%;
-      margin-left: 25%;
+    .boxImgsx{
+      display: none;
     }
     .subTitle {
       padding: 0 25% 15px;
@@ -1184,6 +1196,9 @@
     .boxImg {
       width: 70%;
       margin-left: 15%;
+    }
+    .boxImgsx{
+      display: none;
     }
     .subTitle {
       padding: 0 25% 15px;

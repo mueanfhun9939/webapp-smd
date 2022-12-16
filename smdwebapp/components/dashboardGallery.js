@@ -2,45 +2,46 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import styles from "../styles/Home.module.scss";
+import Image from "next/image";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-
+import pathimg from "../public/static/DCS_0066.JPG";
 const itemData = [
   {
-    img: "static/DCS_0066.JPG",
+    img: pathimg,
     title: "Breakfast",
   },
   {
-    img: "static/DCS_0080.JPG",
+    img: pathimg,
     title: "Burger",
   },
   {
-    img: "static/DCS_0092.JPG",
+    img: pathimg,
     title: "Camera",
   },
   {
-    img: "static/DCS_0098.JPG",
+    img: pathimg,
     title: "Coffee",
     cols: 2,
   },
   {
-    img: "static/MOH_2068.JPG",
+    img: pathimg,
     title: "Hats",
     cols: 2,
   },
   {
-    img: "static/MOH_2088.JPG",
+    img: pathimg,
     title: "Honey",
     author: "@arwinneil",
     rows: 2,
     cols: 2,
   },
   {
-    img: "static/MOH_2151.JPG",
+    img: pathimg,
     title: "Basketball",
   },
   {
-    img: "static/DCS_0066.JPG",
+    img: pathimg,
     title: "Fern",
   },
 ];
@@ -60,10 +61,17 @@ export default function DashboardGallery() {
           อันจะเป็นประโยชน์สูงสุดของผู้ใช้บริการ
         </Typography>
       </Box>
+      <Carousel className={styles.boxImgsx}>
+        {itemData.map((item) => (
+          <div key={item.item}>
+            <Image src={item.img} alt="image1" width={300} height={300}/>
+          </div>
+        ))}
+      </Carousel>
       <Carousel className={styles.boxImg}>
         {itemData.map((item) => (
           <div key={item.item}>
-            <img src={item.img} alt="image1" />
+            <Image src={item.img} alt="image1" width={300} height={500}/>
           </div>
         ))}
       </Carousel>
