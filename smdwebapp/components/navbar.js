@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useRouter } from 'next/router'
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -31,6 +32,8 @@ const dataList = [
 ];
 
 export default function NavBar() {
+  const router = useRouter()
+  const path = router.pathname;
   return (
     <>
       <Box sx={{ flexGrow: 1, position: "relative" }}>
@@ -68,10 +71,10 @@ export default function NavBar() {
         </AppBar>
       </Box>
       <Box sx={{ flexGrow: 1 }} className={styles.manubar}>
-        <a className={styles.textmanu}> HOME </a>
-        <a className={styles.textmanu}> ABOUT </a>
-        <a className={styles.textmanu}> CATEGORY </a>
-        <a className={styles.textmanu}> CONTACT US </a>
+        <a className={path== '/' ? styles.textmanuFocus : styles.textmanu} href="/"> HOME </a>
+        <a className={path== '/about' ? styles.textmanuFocus : styles.textmanu} href="/about"> ABOUT </a>
+        <a className={path== '/gallery' ? styles.textmanuFocus : styles.textmanu} href="/gallery"> CATEGORY </a>
+        <a className={path== '/contactus' ? styles.textmanuFocus : styles.textmanu} href="/contactus"> CONTACT US </a>
       </Box>
     </>
   );
