@@ -2,7 +2,6 @@ import Image from "next/image";
 import imgpath from "../public/static/coverpage.jpg";
 import styles from "../styles/Home.module.scss";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 
 export default function DashboardCoverPage() {
   return (
@@ -10,7 +9,7 @@ export default function DashboardCoverPage() {
       <Box>
         <Image
           className={styles.coverpage}
-          src={imgpath}
+          src="../public/static/coverpage.jpg"
           alt="Picture of the author"
         />
         <Box className={styles.boxcompanyname}>
