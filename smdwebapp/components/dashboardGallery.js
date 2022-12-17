@@ -61,14 +61,14 @@ export default function DashboardGallery() {
           อันจะเป็นประโยชน์สูงสุดของผู้ใช้บริการ
         </Typography>
       </Box>
-      <Carousel className={styles.boxImgsx}>
+      <Carousel className={styles.boxImgsx} showThumbs={false}>
         {itemData.map((item) => (
           <div key={item.item}>
             <Image src={item.img} alt="image1" width={300} height={300}/>
           </div>
         ))}
       </Carousel>
-      <Carousel className={styles.boxImg}>
+      <Carousel className={styles.boxImg} showThumbs={false}>
         {itemData.map((item) => (
           <div key={item.item}>
             <Image src={item.img} alt="image1" width={300} height={500}/>

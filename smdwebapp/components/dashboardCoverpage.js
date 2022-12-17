@@ -9,8 +9,10 @@ export default function DashboardCoverPage() {
       <Box>
         <Image
           className={styles.coverpage}
-          src="../public/static/coverpage.jpg"
+          src={imgpath}
           alt="Picture of the author"
+          width={500}
+          height={500}
         />
         <Box className={styles.boxcompanyname}>
           <p className={styles.companyname}>SMD SECURITY CO. LTD.</p>
