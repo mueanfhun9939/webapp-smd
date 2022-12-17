@@ -20,7 +20,6 @@ import {
   faPlaneDeparture,
   faBuilding,
   faHandPointer,
-  faLine
 } from "@fortawesome/free-solid-svg-icons";
 
 const ItemList = [
@@ -158,7 +157,7 @@ export default function Footer() {
               <Button startIcon={<FacebookIcon />} className={styles.btn}>
                 <Typography className={styles.namebtn}>SMD Security</Typography>
               </Button>
-              <Button startIcon={<FontAwesomeIcon icon={faLine} />} className={styles.btn}>
+              <Button startIcon={<FacebookIcon />} className={styles.btn}>
                 <Typography className={styles.namebtn}>080-852-6888</Typography>
               </Button>
             </Box>

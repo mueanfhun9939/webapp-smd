@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.scss";
 import Image from "next/image";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import pathimg from "../public/static/DCS_0066.JPG";
+import pathimg from "../public/static/DCS0066.jpg";
 const itemData = [
   {
     img: pathimg,

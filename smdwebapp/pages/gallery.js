@@ -6,7 +6,7 @@ import Image from "next/image";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
-import pathimg from "../public/static/DCS_0066.JPG";
+import pathimg from "../public/static/DCS0066.jpg";
 export default function Gallery() {
   return (
     <>
