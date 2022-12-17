@@ -108,7 +108,11 @@
 }
 
 .coverpage {
-  width: 100%;
+  background-image: url("../public/static/bgConcept.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 15%;
   height: 500px;
   filter: grayscale(30%) blur(0.5px);
 }
@@ -117,10 +121,8 @@
   color: #fafafa;
   font-family: "Rancho";
   width: 100%;
-  position: absolute;
   font-weight: 800;
   text-align: center;
-  top: 300px;
   font-size: 100px;
 
   .companyname {

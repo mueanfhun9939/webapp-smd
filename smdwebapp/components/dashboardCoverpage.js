@@ -6,18 +6,14 @@ import Box from "@mui/material/Box";
 export default function DashboardCoverPage() {
   return (
     <>
-      <Box>
-        <Image
-          className={styles.coverpage}
-          src={imgpath}
-          alt="Picture of the author"
-          width={500}
-          height={500}
-        />
+    <div className={styles.coverpage}>
+    <Box>
         <Box className={styles.boxcompanyname}>
           <p className={styles.companyname}>SMD SECURITY CO. LTD.</p>
         </Box>
       </Box>
+    </div>
+    
     </>
   );
 }
