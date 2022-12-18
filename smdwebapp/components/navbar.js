@@ -1,4 +1,5 @@
 import * as React from "react";
+import { createTheme } from '@mui/material/styles';
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import AppBar from "@mui/material/AppBar";
@@ -32,13 +33,22 @@ const dataList = [
   },
 ];
 
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#121435"
+    }
+  },
+});
+
 export default function NavBar() {
   const router = useRouter()
   const path = router.pathname;
+  
   return (
     <>
       <Box sx={{ flexGrow: 1, position: "relative" }}>
-        <AppBar position="static" className={styles.appbar}>
+        <AppBar position="static" className={styles.appbar} theme={theme}>
           <Toolbar>
             <Image
               className={styles.logo}

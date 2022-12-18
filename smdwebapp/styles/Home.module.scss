@@ -2,7 +2,7 @@
 
 //  ------------------- Header --------------------------
 .appbar {
-  background-color: $primary-color;
+  color: "#121435";
   width: 100%;
   height: 90px;
 
@@ -108,13 +108,11 @@
 }
 
 .coverpage {
-  background-image: url("../public/static/bgConcept.png");
+  background-image: url("../public/static/highLight.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 15%;
   height: 500px;
-  filter: grayscale(30%) blur(0.5px);
 }
 
 .boxcompanyname {
@@ -135,16 +133,12 @@
 //  ------------------- Body --------------------------
 
 .bgConcept {
-  background-image: url("../public/static/bgConcept.png");
+  background-color: $primary-color;
   height: 420px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 20%;
-
-  // @media only screen and (min-width: 421px) and (max-width: 550px) {
-  //   padding-top: 15%;
-  // }
 }
 
 .borderBox {
@@ -465,7 +459,7 @@
 
 .boxfootersm {
   width: 100%;
-  height: 200px;
+  height: 260px;
   background-color: $primary-color;
   text-align: center;
   .phone {
@@ -480,6 +474,7 @@
   .btn {
     background-color: $secondary-color;
     color: $primary-color;
+    margin: 5px;
     .name {
       font-size: 25px;
       font-family: $text-font-thai;
@@ -502,6 +497,7 @@
   }
   .btn {
     padding: 0;
+    margin-left: 5px;
     border-radius: 20px;
     width: 150px;
     height: 50px;
@@ -930,10 +926,44 @@
     }
   }
 }
+
+// --------------------- page register --------------------------
+
+.imgRegister{
+  width: 100%;
+  padding-top: 5%;
+  text-align: center;
+  .img {
+    height: max-content;
+    width: 75%;
+  }
+}
+
+.btnRegister{
+  width: 100%;
+  text-align: center;
+  .btn{
+    width: 80%;
+    background-color: $primary-color;
+    padding: 15px;
+    .iconBtn{
+      width: 30px;
+      height: 30px;
+      color: white;
+    }
+    .nameBtn{
+      font-size: 30px;
+      font-family: $text-font-thai;
+      color: white;
+    }
+  }
+}
 //  ------------------- start Responsive --------------------------
 @media only screen and (min-width: 300px) and (max-width: 480px) {
   // For mobile devices: 300px to 480px
   .coverpage {
+    background-image: url("../public/static/board.png");
+    margin-top: 10%;
     height: 220px;
   }
 
@@ -1006,6 +1036,17 @@
       padding: 10px;
     }
   }
+
+  .imgRegister{
+    width: 100%;
+    padding-top: 15%;
+    text-align: center;
+    .img {
+      height: 600px;
+      width: 300px;
+    }
+  }
+
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
