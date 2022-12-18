@@ -6,7 +6,21 @@ import Image from "next/image";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
-import pathimg from "../public/static/DCS0066.jpg";
+import image1 from "../public/static/image/img1.jpg";
+import image2 from "../public/static/image/img2.jpg";
+import image3 from "../public/static/image/img3.jpg";
+import image4 from "../public/static/image/img4.jpg";
+import image5 from "../public/static/image/img5.jpg";
+import image6 from "../public/static/image/img6.jpg";
+import image7 from "../public/static/image/img7.jpg";
+import image8 from "../public/static/image/img8.jpg";
+import image9 from "../public/static/image/img9.jpg";
+import image10 from "../public/static/image/img10.jpg";
+import image11 from "../public/static/image/img11.jpg";
+import image12 from "../public/static/image/img12.jpg";
+import image13 from "../public/static/image/img13.jpg";
+import image14 from "../public/static/image/img14.jpg";
+
 export default function Gallery() {
   return (
     <>
@@ -40,7 +54,7 @@ export default function Gallery() {
           <>
             <Box
               sx={{ textAlign: "center" }}
-              key={item.img1}
+              key={item.id}
               className={styles.boxlist}
             >
               <Box className={styles.img}>
@@ -60,51 +74,38 @@ export default function Gallery() {
 
 const itemData = [
   {
-    img1: pathimg,
-    img2: pathimg,
+    id:1,
+    img1: image1,
+    img2: image2,
   },
   {
-    img1: pathimg,
-    img2: pathimg,
+    id:2,
+    img1: image3,
+    img2: image4,
   },
   {
-    img1: pathimg,
-    img2: pathimg,
+    id:3,
+    img1: image5,
+    img2: image6,
   },
   {
-    img1: pathimg,
-    img2: pathimg,
+    id:4,
+    img1: image7,
+    img2: image8,
   },
   {
-    img1: pathimg,
-    img2: pathimg,
+    id:5,
+    img1: image9,
+    img2: image10,
   },
   {
-    img1: pathimg,
-    img2: pathimg,
+    id:6,
+    img1: image11,
+    img2: image12,
   },
   {
-    img1: pathimg,
-    img2: pathimg,
-  },
-  {
-    img1: pathimg,
-    img2: pathimg,
-  },
-  {
-    img1: pathimg,
-    img2: pathimg,
-  },
-  {
-    img1: pathimg,
-    img2: pathimg,
-  },
-  {
-    img1: pathimg,
-    img2: pathimg,
-  },
-  {
-    img1: pathimg,
-    img2: pathimg,
-  },
+    id:7,
+    img1: image13,
+    img2: image14,
+  }
 ];
