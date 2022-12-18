@@ -9,7 +9,6 @@ import pathlogo from "../public/static/smdlogo.png";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import {
   faHouse,
   faStore,
@@ -20,7 +19,7 @@ import {
   faPlaneDeparture,
   faBuilding,
   faHandPointer,
-  faLine
+  faHandshake,
 } from "@fortawesome/free-solid-svg-icons";
 
 const ItemList = [
@@ -89,19 +88,34 @@ export default function Footer() {
         <Typography className={styles.phone}>ติดต่อสอบถาม</Typography>
         <Typography className={styles.phone}>02-1250028</Typography>
         <Typography className={styles.phone}>080-852-6888</Typography>
-        <Button
-          className={styles.btn}
-          startIcon={
-            <FontAwesomeIcon
-              icon={faHandPointer}
-              className={styles.handPointer}
-            />
-          }
-
-          href="https://docs.google.com/forms/d/e/1FAIpQLSc25kKl_LNsKSqcwvkHuouRq1LZszXAAJGXOKXXKOB8xRl_OA/viewform?usp=sf_link"
-        >
-          <Typography className={styles.name}>ขอใบเสนอราคา</Typography>
-        </Button>
+        <Box>
+          <Button
+            className={styles.btn}
+            startIcon={
+              <FontAwesomeIcon
+                icon={faHandPointer}
+                className={styles.handPointer}
+              />
+            }
+            href="https://forms.gle/9ENgsmB5vVAoj91d9"
+          >
+            <Typography className={styles.name}>ขอใบเสนอราคา</Typography>
+          </Button>
+        </Box>
+        <Box>
+          <Button
+            className={styles.btn}
+            startIcon={
+              <FontAwesomeIcon
+                icon={faHandshake}
+                className={styles.handPointer}
+              />
+            }
+            href="/registerJob"
+          >
+            <Typography className={styles.name}>สมัครงาน</Typography>
+          </Button>
+        </Box>
       </Box>
       <Box sx={{ flexGrow: 1 }} className={styles.boxfooter1}>
         <Grid
@@ -119,9 +133,20 @@ export default function Footer() {
               className={styles.btn}
               sx={{ paddingTop: "10%" }}
               startIcon={<FontAwesomeIcon icon={faHandPointer} />}
-              href="https://docs.google.com/forms/d/e/1FAIpQLSc25kKl_LNsKSqcwvkHuouRq1LZszXAAJGXOKXXKOB8xRl_OA/viewform?usp=sf_link"
+              href="https://forms.gle/9ENgsmB5vVAoj91d9"
             >
               <Typography className={styles.nameBtn}>ขอใบเสนอราคา</Typography>
+            </Button>
+            <Button
+              className={styles.btn}
+              startIcon={
+                <FontAwesomeIcon
+                  icon={faHandshake}
+                />
+              }
+              href="/registerJob"
+            >
+              <Typography className={styles.nameBtn}>สมัครงาน</Typography>
             </Button>
           </Grid>
         </Grid>

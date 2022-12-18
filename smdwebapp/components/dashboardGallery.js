@@ -5,44 +5,72 @@ import styles from "../styles/Home.module.scss";
 import Image from "next/image";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import pathimg from "../public/static/DCS_0066.JPG";
+import image1 from "../public/static/image/img1.jpg";
+import image2 from "../public/static/image/img2.jpg";
+import image3 from "../public/static/image/img3.jpg";
+import image4 from "../public/static/image/img4.jpg";
+import image5 from "../public/static/image/img5.jpg";
+import image6 from "../public/static/image/img6.jpg";
+import image7 from "../public/static/image/img7.jpg";
+import image9 from "../public/static/image/img9.jpg";
+import image10 from "../public/static/image/img10.jpg";
+import image11 from "../public/static/image/img11.jpg";
+import image12 from "../public/static/image/img12.jpg";
+import image13 from "../public/static/image/img13.jpg";
+import image14 from "../public/static/image/img14.jpg";
+
 const itemData = [
   {
-    img: pathimg,
-    title: "Breakfast",
+    img: image1,
+    title: "image1",
   },
   {
-    img: pathimg,
-    title: "Burger",
+    img: image2,
+    title: "image2",
   },
   {
-    img: pathimg,
-    title: "Camera",
+    img: image3,
+    title: "image3",
   },
   {
-    img: pathimg,
-    title: "Coffee",
-    cols: 2,
+    img: image4,
+    title: "image4",
   },
   {
-    img: pathimg,
-    title: "Hats",
-    cols: 2,
+    img: image5,
+    title: "image5",
   },
   {
-    img: pathimg,
-    title: "Honey",
-    author: "@arwinneil",
-    rows: 2,
-    cols: 2,
+    img: image6,
+    title: "image6",
   },
   {
-    img: pathimg,
-    title: "Basketball",
+    img: image7,
+    title: "image7",
   },
   {
-    img: pathimg,
-    title: "Fern",
+    img: image9,
+    title: "image9",
+  },
+  {
+    img: image10,
+    title: "image10",
+  },
+  {
+    img: image11,
+    title: "image11",
+  },
+  {
+    img: image12,
+    title: "image12",
+  },
+  {
+    img: image13,
+    title: "image13",
+  },
+  {
+    img: image14,
+    title: "image14",
   },
 ];
 
