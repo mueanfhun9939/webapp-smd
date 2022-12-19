@@ -69,10 +69,10 @@ export default function DashboardStandard() {
               <Grid xs={4} sm={4} md={4} key={data.id}>
                 <Box
                   sx={{
-                    backgroundColor: "white",
+                    backgroundColor: "#FFF6D0",
                     height: "200px",
                     width: "80%",
-                    boxShadow: "10px 10px 5px lightblue",
+                    boxShadow: "10px 10px 5px #FFCC00",
                     margin: "auto",
                   }}
                 >
