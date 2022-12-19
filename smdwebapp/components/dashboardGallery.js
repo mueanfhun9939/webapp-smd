@@ -63,14 +63,14 @@ export default function DashboardGallery() {
       </Box>
       <Carousel className={styles.boxImgsx} showThumbs={false}>
         {itemData.map((item) => (
-          <div key={item.item}>
+          <div key={item.title}>
             <Image src={item.img} alt="image1" width={300} height={300}/>
           </div>
         ))}
       </Carousel>
       <Carousel className={styles.boxImg} showThumbs={false}>
         {itemData.map((item) => (
-          <div key={item.item}>
+          <div key={item.title}>
             <Image src={item.img} alt="image1" width={300} height={500}/>
           </div>
         ))}
